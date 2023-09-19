@@ -14,22 +14,48 @@ body {
     background-size: cover;
     color: white;
     height: 100vh;
+
+    .container {
+        margin: 0 auto;
+        width: 80vw;
+    }
+}
+
+header {
+    display: flex;
+}
+
+nav {   
+    margin: auto;
+
+    & menu {
+        display: inline-flex;
+        justify-content: center;
+
+        & li {
+            font-family: var(--manrope);
+            list-style-type: none;
+            padding: 1rem;
+            font-size: 1.25rem;
+        }
+    }
 }
 
 h1 {
-    font-family: 'Manrope', sans-serif;
+    font-family: var(--manrope);
 }
 
 h2 {
-    font-family: 'space grotesk', sans-serif;
+    font-family: var(--space);
     font-weight: 300;
 }
 
 .logo {
     font-size: 3rem;
     display: flex;
-    justify-content: left;
-    font-family: 'Space Grotesk', sans-serif;
+    position: absolute;
+    /* align-self: flex-start; */
+    font-family: var(--space);
 
     &:hover {
         .word-logo {
